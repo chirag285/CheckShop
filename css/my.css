@@ -1,0 +1,197 @@
+.center {
+  text-align: center !important;
+}
+.shop-two {
+  background-image: url('../images/Shops/two-shop.png');
+  height: 350px;
+  background-color: aquamarine !important;
+}
+
+.shop-three {
+  background-image: url('../images/Shops/food-shop-2.jpg');
+  object-fit: scale-down;
+  height: 350px;
+  background-color: aquamarine !important;
+}
+.shop-four {
+  background-image: url('../images/Shops/four-shop.png');
+  height: 350px;
+  background-color: aquamarine !important;
+}
+.my-logo {
+  margin-left: 30px !important;
+}
+/* Buyer or Seller Start */
+
+.sign-up-blk {
+  margin: 40px 20px 40px 80px;
+  padding: 120px 0px 150px 0px;
+  background-color: aquamarine;
+}
+.my-sign-up-btn {
+  background-color: #ff2200;
+  height: 40px;
+  color: white;
+  padding: 0px 10px 0px 10px;
+  border-radius: 20px;
+}
+.seller-sign-up-btn {
+  background-color: #002fff;
+}
+.desc-p {
+  margin-bottom: 100px;
+}
+
+/* Buyer or Seller End */
+
+/* Buyer Sign Up Form Start */
+
+.form-cont {
+  padding: 20px 100px 50px 0px;
+}
+
+.form-cont form {
+  padding: 20px 0px 50px 0px;
+}
+
+.my-address-row {
+  padding-right: 205px;
+  padding-left: 365px;
+}
+
+.my-address-row-2 {
+  padding-right: 164px;
+  padding-left: 404px;
+}
+
+.form-cont label {
+  width: 100px;
+}
+
+.form-cont-2 label {
+  width: 180px;
+  text-align: left;
+}
+
+.form-cont .btn {
+  width: 629px !important;
+  margin-top: 20px;
+  margin-left: 99px;
+}
+
+.form-cont-2 .btn {
+  margin-left: 190px;
+}
+
+.my-input {
+  border: 1px solid #555555 !important;
+  width: 50%;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.my-input-address {
+  width: 74% !important;
+}
+
+/* Buyer Sign Up Form End */
+
+/* Seller Homepage Start */
+
+.seller-homepage-main-blk {
+  padding: 20px;
+}
+
+.seller-homepage-main-blk .col-md-6 {
+  padding: 20px;
+}
+
+.homepage-option-blk {
+  background-color: #ff2200;
+  text-align: center;
+  color: white !important;
+  padding: 50px 0px 50px 0px;
+  cursor: pointer;
+}
+
+.homepage-option-blk p {
+  color: white !important;
+  font-size: 17px;
+}
+/* Seller Homepage End */
+
+/* Add new Product Start */
+
+.add-new-pro-cont {
+  padding: 20px 20px 20px 300px;
+}
+
+.add-pro-btn {
+  background-color: #002fff;
+}
+
+.add-new-pro-cont label {
+  width: 200px;
+}
+
+.add-new-pro-cont input,
+select {
+  border: 1px solid #555555 !important;
+  width: 50%;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.add-product-btn {
+  margin-top: 10px;
+  margin-left: 205px;
+}
+/* Add new Product End */
+
+/* Seller Product List Start */
+
+.seller-product-lis-cont .col-md-6 {
+  padding: 50px;
+}
+
+.main-category-item {
+  text-align: center;
+  background-color: #002fff;
+  color: white !important;
+  padding: 50px;
+  cursor: pointer;
+}
+
+.main-category-item p {
+  color: white !important;
+}
+
+.seller-product-lis-cont h1 {
+  margin-left: 40px;
+}
+
+.product-list .col-md-4 {
+  padding: 60px;
+}
+.main-product-item {
+  height: 400px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.main-product-item img {
+  height: 100%;
+}
+/* Seller Product List End */
+
+/* Buyer Homepage Start */
+
+.location-range {
+  padding-left: 90px;
+  padding-top: 20px;
+}
+
+.my-slider {
+  width: 93%;
+  margin-top: 10px;
+}
+/* Buyer Homepage End */
