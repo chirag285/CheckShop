@@ -21,15 +21,18 @@
 .my-logo {
   margin-left: 30px !important;
 }
+.header1 {
+  height: 81px !important;
+}
 /* Buyer or Seller Start */
 
 .sign-up-blk {
   margin: 40px 20px 40px 80px;
   padding: 120px 0px 150px 0px;
-  background-color: aquamarine;
+  background-color: #ff2200;
 }
 .my-sign-up-btn {
-  background-color: #ff2200;
+  background-color: rgb(17, 184, 17);
   height: 40px;
   color: white;
   padding: 0px 10px 0px 10px;
@@ -40,6 +43,8 @@
 }
 .desc-p {
   margin-bottom: 100px;
+  color: white !important;
+  font-size: 30px;
 }
 
 /* Buyer or Seller End */
@@ -195,3 +200,7 @@ select {
   margin-top: 10px;
 }
 /* Buyer Homepage End */
+
+.shop-name-pro-detail {
+  color: #e65540;
+}

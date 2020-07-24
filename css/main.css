@@ -1933,6 +1933,37 @@ li.sale-noti > a {
   display: none;
 }
 
+.leftbar #filter-bar-2 {
+  margin-right: 6px;
+  margin-left: 6px;
+  height: 4px;
+  border: none;
+  background-color: #e1e1e1;
+}
+.leftbar #filter-bar-2 .noUi-connect {
+  background-color: #c5c5c5;
+  border: none;
+  box-shadow: none;
+}
+.leftbar #filter-bar-2 .noUi-handle {
+  width: 13px;
+  height: 13px;
+  left: -6px;
+  top: -5px;
+  border: none;
+  border-radius: 50%;
+  background: #999999;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+}
+.leftbar #filter-bar-2 .noUi-handle:before {
+  display: none;
+}
+.leftbar #filter-bar-2 .noUi-handle:after {
+  display: none;
+}
+
 /*[ Filter Color ]
 ///////////////////////////////////////////////////////////
 */
