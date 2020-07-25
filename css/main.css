@@ -1681,11 +1681,6 @@ li.sale-noti > a {
   content: 'Sale';
 }
 
-.block2-labelnew::before {
-  background-color: #66a8a6;
-  content: 'New';
-}
-
 /* ------------------------------------ */
 .block2-overlay {
   position: absolute;

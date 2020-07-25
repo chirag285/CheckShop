@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Product</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--===============================================================================================-->
@@ -57,24 +57,25 @@
       href="vendor/select2/select2.min.css"
     />
     <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="vendor/daterangepicker/daterangepicker.css"
-    />
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="vendor/lightbox2/css/lightbox.min.css"
+      href="vendor/noui/nouislider.min.css"
     />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/my.css" />
 
+    <style>
+      .product-list-ds img {
+        object-fit: cover;
+        width: 270px;
+        height: 360px;
+      }
+    </style>
     <!--===============================================================================================-->
   </head>
   <body class="animsition">
@@ -109,7 +110,7 @@
                 </li>
 
                 <li>
-                  <a href="seller-homepage.html">Login</a>
+                  <a href="#">Login</a>
                 </li>
               </ul>
             </nav>
@@ -149,7 +150,7 @@
                       </a>
 
                       <span class="header-cart-item-info">
-                        1 x $19.00
+                        1 x RS.19.00
                       </span>
                     </div>
                   </li>
@@ -165,7 +166,7 @@
                       </a>
 
                       <span class="header-cart-item-info">
-                        1 x $39.00
+                        1 x RS.39.00
                       </span>
                     </div>
                   </li>
@@ -181,14 +182,14 @@
                       </a>
 
                       <span class="header-cart-item-info">
-                        1 x $17.00
+                        1 x RS.17.00
                       </span>
                     </div>
                   </li>
                 </ul>
 
                 <div class="header-cart-total">
-                  Total: $75.00
+                  Total: RS.75.00
                 </div>
 
                 <div class="header-cart-buttons">
@@ -221,13 +222,15 @@
       <!-- Header Mobile -->
       <div class="wrap_header_mobile">
         <!-- Logo moblie -->
-        <a href="index.html" class="logo-mobile">
-          <img src="images/icons/logo.png" alt="IMG-LOGO" />
+
+        <a href="index.html" class="my-mobile-logo">
+          <h2>Check Shop</h2>
         </a>
 
         <!-- Button show menu -->
         <div class="btn-show-menu">
           <!-- Header Icon mobile -->
+
           <div class="header-icons-mobile">
             <a href="#" class="header-wrapicon1 dis-block">
               <img
@@ -340,44 +343,8 @@
       <div class="wrap-side-menu">
         <nav class="side-menu">
           <ul class="main-menu">
-            <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
-              <span class="topbar-child1">
-                Free shipping for standard order over $100
-              </span>
-            </li>
-
-            <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
-              <div class="topbar-child2-mobile">
-                <span class="topbar-email">
-                  fashe@example.com
-                </span>
-
-                <div class="topbar-language rs1-select2">
-                  <select class="selection-1" name="time">
-                    <option>USD</option>
-                    <option>EUR</option>
-                  </select>
-                </div>
-              </div>
-            </li>
-
-            <li class="item-topbar-mobile p-l-10">
-              <div class="topbar-social-mobile">
-                <a href="#" class="topbar-social-item fa fa-facebook"></a>
-                <a href="#" class="topbar-social-item fa fa-instagram"></a>
-                <a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
-                <a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
-                <a href="#" class="topbar-social-item fa fa-youtube-play"></a>
-              </div>
-            </li>
-
             <li class="item-menu-mobile">
               <a href="index.html">Home</a>
-              <ul class="sub-menu">
-                <li><a href="index.html">Homepage V1</a></li>
-                <li><a href="home-02.html">Homepage V2</a></li>
-                <li><a href="home-03.html">Homepage V3</a></li>
-              </ul>
               <i
                 class="arrow-main-menu fa fa-angle-right"
                 aria-hidden="true"
@@ -385,156 +352,432 @@
             </li>
 
             <li class="item-menu-mobile">
-              <a href="product.html">Shop</a>
+              <a href="buyer-homepage.html">Shops</a>
             </li>
 
             <li class="item-menu-mobile">
-              <a href="product.html">Sale</a>
+              <a href="product.html">Products</a>
             </li>
 
             <li class="item-menu-mobile">
-              <a href="cart.html">Features</a>
+              <a href="buyer-or-seller.html">Sign Up</a>
             </li>
 
             <li class="item-menu-mobile">
-              <a href="blog.html">Blog</a>
-            </li>
-
-            <li class="item-menu-mobile">
-              <a href="about.html">About</a>
-            </li>
-
-            <li class="item-menu-mobile">
-              <a href="contact.html">Contact</a>
+              <a href="#">Login</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- Buyer Homepage Start -->
-
-    <div class="location-range">
-      <h4 class="center mt-2 mb-2">
-        Showings shops <span class="distance"> 10 </span> K.M from you.
-      </h4>
-
-      <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="my-slider" />
-      </div>
-    </div>
-
-    <!-- Banner -->
-    <section class="banner bgwhite p-t-40 p-b-40">
+    <!-- Content page -->
+    <section class="bgwhite p-t-55 p-b-65">
       <div class="container">
         <div class="row">
-          <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-            <!-- block1 -->
-            <div class="block1 hov-img-zoom pos-relative m-b-30">
-              <div class="shop-two"></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
+            <div class="leftbar p-r-20 p-r-0-sm">
+              <!--  -->
+              <h4 class="m-text14 p-b-7">
+                Categories
+              </h4>
 
-              <div class="block1-wrapbtn w-size2">
-                <!-- Button -->
-                <a
-                  href="seller-profile.html"
-                  class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4"
+              <ul class="p-b-54">
+                <li class="p-t-4">
+                  <a href="#" class="s-text13 active1">
+                    All
+                  </a>
+                </li>
+
+                <li class="p-t-4">
+                  <a href="#" class="s-text13">
+                    Electronics
+                  </a>
+                </li>
+
+                <li class="p-t-4">
+                  <a href="#" class="s-text13">
+                    Clothing
+                  </a>
+                </li>
+
+                <li class="p-t-4">
+                  <a href="#" class="s-text13">
+                    Home & Furniture
+                  </a>
+                </li>
+
+                <li class="p-t-4">
+                  <a href="#" class="s-text13">
+                    Food
+                  </a>
+                </li>
+
+                <li class="p-t-4">
+                  <a href="#" class="s-text13">
+                    More
+                  </a>
+                </li>
+              </ul>
+
+              <!--  -->
+              <h4 class="m-text14 p-b-32">
+                Filters
+              </h4>
+
+              <div class="filter-price p-t-22 p-b-50 bo3">
+                <!-- dwd -->
+
+                <div class="m-text15 p-b-17">
+                  Distance From You
+                </div>
+
+                <div class="wra-filter-bar">
+                  <div id="filter-bar-2"></div>
+                </div>
+
+                <div class="s-text3 p-t-10 p-b-10">
+                  Distance: <span id="value-lower-2">610</span> K.M -
+                  <span id="value-upper-2">200</span>K.M
+                </div>
+
+                <!-- dwd -->
+
+                <div class="flex-sb-m flex-w p-t-16">
+                  <div class="w-size11">
+                    <!-- Button -->
+                    <button
+                      class="flex-c-m size4 bg7 bo-rad-15 hov1 s-text14 trans-0-4"
+                    >
+                      Filter
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="search-product pos-relative bo4 of-hidden">
+                <input
+                  class="s-text7 size6 p-l-23 p-r-50"
+                  type="text"
+                  name="search-product"
+                  placeholder="Search Products..."
+                />
+
+                <button
+                  class="flex-c-m size5 ab-r-m color2 color0-hov trans-0-4"
                 >
-                  Visit
-                </a>
+                  <i class="fs-12 fa fa-search" aria-hidden="true"></i>
+                </button>
               </div>
             </div>
           </div>
 
-          <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-            <!-- block1 -->
-            <div class="block1 hov-img-zoom pos-relative m-b-30">
-              <div class="shop-four"></div>
+          <div class="col-sm-6 col-md-8 col-lg-9 p-b-50">
+            <!-- Product -->
+            <div class="row product-list-ds">
+              <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                <!-- Block2 -->
+                <div class="block2">
+                  <div
+                    class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew"
+                  >
+                    <img src="images/Shops/music.png" alt="IMG-PRODUCT" />
 
-              <div class="block1-wrapbtn w-size2">
-                <!-- Button -->
-                <a
-                  href="seller-profile.html"
-                  class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4"
-                >
-                  Visit
-                </a>
+                    <div class="block2-overlay trans-0-4">
+                      <a
+                        href="#"
+                        class="block2-btn-addwishlist hov-pointer trans-0-4"
+                      >
+                        <i
+                          class="icon-wishlist icon_heart_alt"
+                          aria-hidden="true"
+                        ></i>
+                        <i
+                          class="icon-wishlist icon_heart dis-none"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+
+                      <div class="block2-btn-addcart w-size1 trans-0-4">
+                        <!-- Button -->
+                        <button
+                          class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+                        >
+                          Visit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block2-txt p-t-20">
+                    <a
+                      href="product-detail.html"
+                      class="block2-name dis-block s-text3 p-b-5"
+                    >
+                      Music World Sundernagar
+                    </a>
+
+                    <p class="block2-price p-r-5">
+                      Deals in - Electronics
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                <!-- Block2 -->
+                <div class="block2">
+                  <div
+                    class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew"
+                  >
+                    <img src="images/Shops/food-shop.jpg" alt="IMG-PRODUCT" />
+
+                    <div class="block2-overlay trans-0-4">
+                      <a
+                        href="#"
+                        class="block2-btn-addwishlist hov-pointer trans-0-4"
+                      >
+                        <i
+                          class="icon-wishlist icon_heart_alt"
+                          aria-hidden="true"
+                        ></i>
+                        <i
+                          class="icon-wishlist icon_heart dis-none"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+
+                      <div class="block2-btn-addcart w-size1 trans-0-4">
+                        <!-- Button -->
+                        <button
+                          class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+                        >
+                          Visit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block2-txt p-t-20">
+                    <a
+                      href="product-detail.html"
+                      class="block2-name dis-block s-text3 p-b-5"
+                    >
+                      Trilok Karayana Store
+                    </a>
+
+                    <p class="block2-price p-r-5">
+                      Deals in - Karyana
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                <!-- Block2 -->
+                <div class="block2">
+                  <div
+                    class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew"
+                  >
+                    <img src="images/Shops/two-swhop.png" alt="IMG-PRODUCT" />
+
+                    <div class="block2-overlay trans-0-4">
+                      <a
+                        href="#"
+                        class="block2-btn-addwishlist hov-pointer trans-0-4"
+                      >
+                        <i
+                          class="icon-wishlist icon_heart_alt"
+                          aria-hidden="true"
+                        ></i>
+                        <i
+                          class="icon-wishlist icon_heart dis-none"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+
+                      <div class="block2-btn-addcart w-size1 trans-0-4">
+                        <!-- Button -->
+                        <button
+                          class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+                        >
+                          Visit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block2-txt p-t-20">
+                    <a
+                      href="product-detail.html"
+                      class="block2-name dis-block s-text3 p-b-5"
+                    >
+                      Inn Style Sundernagar
+                    </a>
+
+                    <p class="block2-price p-r-5">
+                      Deals in - Clothing
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                <!-- Block2 -->
+                <div class="block2">
+                  <div
+                    class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew"
+                  >
+                    <img src="images/Shops/music.png" alt="IMG-PRODUCT" />
+
+                    <div class="block2-overlay trans-0-4">
+                      <a
+                        href="#"
+                        class="block2-btn-addwishlist hov-pointer trans-0-4"
+                      >
+                        <i
+                          class="icon-wishlist icon_heart_alt"
+                          aria-hidden="true"
+                        ></i>
+                        <i
+                          class="icon-wishlist icon_heart dis-none"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+
+                      <div class="block2-btn-addcart w-size1 trans-0-4">
+                        <!-- Button -->
+                        <button
+                          class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+                        >
+                          Visit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block2-txt p-t-20">
+                    <a
+                      href="product-detail.html"
+                      class="block2-name dis-block s-text3 p-b-5"
+                    >
+                      Music World Sundernagar
+                    </a>
+
+                    <p class="block2-price p-r-5">
+                      Deals in - Electronics
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                <!-- Block2 -->
+                <div class="block2">
+                  <div
+                    class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew"
+                  >
+                    <img src="images/Shops/food-shop.jpg" alt="IMG-PRODUCT" />
+
+                    <div class="block2-overlay trans-0-4">
+                      <a
+                        href="#"
+                        class="block2-btn-addwishlist hov-pointer trans-0-4"
+                      >
+                        <i
+                          class="icon-wishlist icon_heart_alt"
+                          aria-hidden="true"
+                        ></i>
+                        <i
+                          class="icon-wishlist icon_heart dis-none"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+
+                      <div class="block2-btn-addcart w-size1 trans-0-4">
+                        <!-- Button -->
+                        <button
+                          class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+                        >
+                          Visit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block2-txt p-t-20">
+                    <a
+                      href="product-detail.html"
+                      class="block2-name dis-block s-text3 p-b-5"
+                    >
+                      Trilok Karayana Store
+                    </a>
+
+                    <p class="block2-price p-r-5">
+                      Deals in - Karyana
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                <!-- Block2 -->
+                <div class="block2">
+                  <div
+                    class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew"
+                  >
+                    <img src="images/Shops/two-swhop.png" alt="IMG-PRODUCT" />
+
+                    <div class="block2-overlay trans-0-4">
+                      <a
+                        href="#"
+                        class="block2-btn-addwishlist hov-pointer trans-0-4"
+                      >
+                        <i
+                          class="icon-wishlist icon_heart_alt"
+                          aria-hidden="true"
+                        ></i>
+                        <i
+                          class="icon-wishlist icon_heart dis-none"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+
+                      <div class="block2-btn-addcart w-size1 trans-0-4">
+                        <!-- Button -->
+                        <button
+                          class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"
+                        >
+                          Visit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block2-txt p-t-20">
+                    <a
+                      href="product-detail.html"
+                      class="block2-name dis-block s-text3 p-b-5"
+                    >
+                      Music World Sundernagar
+                    </a>
+
+                    <p class="block2-price p-r-5">
+                      Deals in - Electronics
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-            <!-- block1 -->
-            <div class="block1 hov-img-zoom pos-relative m-b-30">
-              <div class="shop-three"></div>
-
-              <div class="block1-wrapbtn w-size2">
-                <!-- Button -->
-                <a
-                  href="seller-profile.html"
-                  class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4"
-                >
-                  Visit
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Buyer Homepage End -->
-
-    <!-- Find Prodcuts -->
-
-    <!-- Slide1 -->
-
-    <section class="mb-2 center">
-      <h4>Products available near you.</h4>
-    </section>
-
-    <!-- Banner -->
-    <section class="banner bgwhite p-t-40 p-b-40">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-            <!-- block1 -->
-            <div class="block1 hov-img-zoom pos-relative m-b-30">
-              <img src="images/my/clothes.jpg" alt="" />
-
-              <div class="block1-wrapbtn w-size2">
-                <!-- Button -->
-                <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                  Clothes
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-            <!-- block1 -->
-            <div class="block1 hov-img-zoom pos-relative m-b-30">
-              <img src="images/my/electronic-gadgets.jpeg" alt="" />
-
-              <div class="block1-wrapbtn w-size2">
-                <!-- Button -->
-                <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                  Electronics
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-            <!-- block1 -->
-            <div class="block1 hov-img-zoom pos-relative m-b-30">
-              <img src="images/my/food.jpg" alt="" />
-
-              <div class="block1-wrapbtn w-size2">
-                <!-- Button -->
-                <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                  Food
-                </a>
-              </div>
+            <!-- Pagination -->
+            <div class="pagination flex-m flex-w p-t-26">
+              <a
+                href="#"
+                class="item-pagination flex-c-m trans-0-4 active-pagination"
+                >1</a
+              >
+              <a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
             </div>
           </div>
         </div>
@@ -723,8 +966,7 @@
         </a>
 
         <div class="t-center s-text8 p-t-20">
-          Copyright Ã‚Â© 2018 All rights reserved. | This template is made
-          with
+          Copyright © 2018 All rights reserved. | This template is made with
           <i class="fa fa-heart-o" aria-hidden="true"></i> by
           <a href="https://colorlib.com" target="_blank">Colorlib</a>
         </div>
@@ -738,8 +980,9 @@
       </span>
     </div>
 
-    <!-- Container Selection1 -->
+    <!-- Container Selection -->
     <div id="dropDownSelect1"></div>
+    <div id="dropDownSelect2"></div>
 
     <!--===============================================================================================-->
     <script
@@ -764,36 +1007,32 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1'),
       });
+
+      $('.selection-2').select2({
+        minimumResultsForSearch: 20,
+        dropdownParent: $('#dropDownSelect2'),
+      });
     </script>
+    <!--===============================================================================================-->
+    <script
+      type="text/javascript"
+      src="vendor/daterangepicker/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="vendor/daterangepicker/daterangepicker.js"
+    ></script>
     <!--===============================================================================================-->
     <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/slick-custom.js"></script>
     <!--===============================================================================================-->
     <script
       type="text/javascript"
-      src="vendor/countdowntime/countdowntime.js"
-    ></script>
-    <!--===============================================================================================-->
-    <script
-      type="text/javascript"
-      src="vendor/lightbox2/js/lightbox.min.js"
-    ></script>
-    <!--===============================================================================================-->
-    <script
-      type="text/javascript"
       src="vendor/sweetalert/sweetalert.min.js"
     ></script>
     <script type="text/javascript">
-      $('.block2-btn-addcart').each(function () {
-        var nameProduct = $(this)
-          .parent()
-          .parent()
-          .parent()
-          .find('.block2-name')
-          .html();
-        $(this).on('click', function () {
-          swal(nameProduct, 'is added to cart !', 'success');
-        });
+      $('.block2-btn-addcart').click(function () {
+        window.location.href = 'seller-profile.html';
       });
 
       $('.block2-btn-addwishlist').each(function () {
@@ -804,23 +1043,65 @@
           .find('.block2-name')
           .html();
         $(this).on('click', function () {
-          swal(nameProduct, 'is added to wishlist !', 'success');
+          swal(
+            nameProduct,
+            'is saved to your favourite shop list !',
+            'success'
+          );
         });
       });
     </script>
 
     <!--===============================================================================================-->
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="vendor/noui/nouislider.min.js"></script>
+    <script type="text/javascript">
+      /*[ No ui ]
+	    ===========================================================*/
+      var filterBar = document.getElementById('filter-bar');
 
-    <script>
-      var slider = document.querySelector('.my-slider');
-      var output = document.querySelector('.distance');
-      output.innerHTML = slider.value; // Display the default slider value
+      noUiSlider.create(filterBar, {
+        start: [600, 2000],
+        connect: true,
+        range: {
+          min: 300,
+          max: 20000,
+        },
+      });
 
-      // Update the current slider value (each time you drag the slider handle)
-      slider.oninput = function () {
-        output.innerHTML = this.value;
-      };
+      var skipValues = [
+        document.getElementById('value-lower'),
+        document.getElementById('value-upper'),
+      ];
+
+      filterBar.noUiSlider.on('update', function (values, handle) {
+        skipValues[handle].innerHTML = Math.round(values[handle]);
+      });
     </script>
+    <script type="text/javascript" src="vendor/noui/nouislider.min.js"></script>
+    <script type="text/javascript">
+      /*[ No ui ]
+      ===========================================================*/
+      var filterBar2 = document.getElementById('filter-bar-2');
+
+      noUiSlider.create(filterBar2, {
+        start: [10, 20],
+        connect: true,
+        range: {
+          min: 10,
+          max: 200,
+        },
+      });
+
+      var skipValues2 = [
+        document.getElementById('value-lower-2'),
+        document.getElementById('value-upper-2'),
+      ];
+
+      filterBar2.noUiSlider.on('update', function (values, handle) {
+        skipValues2[handle].innerHTML = Math.round(values[handle]);
+      });
+    </script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
   </body>
 </html>
