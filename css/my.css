@@ -24,6 +24,12 @@
 .my-mobile-logo h2 {
   font-size: 21px !important;
 }
+
+.my-search {
+  width: 27%;
+  margin-left: 96px;
+}
+
 /* .header1 {
   height: 81px !important;
 } */
