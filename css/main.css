@@ -533,11 +533,11 @@ iframe {
 ///////////////////////////////////////////////////////////
 */
 .header1 {
-  height: 106px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  margin-bottom: 90px;
 }
 
 .fixed-header {
@@ -1129,7 +1129,6 @@ li.sale-noti > a {
 
 .side-menu .sub-menu > li {
   padding-left: 12px;
-  padding-top: ;
 }
 
 .side-menu .sub-menu a:hover {
@@ -1382,7 +1381,7 @@ li.sale-noti > a {
 }
 
 .item-slick1 {
-  height: 570px;
+  height: 284px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
